@@ -1,0 +1,4 @@
+defaultProject: chicago-cabs-505404
+defaultDataset: dataform
+defaultAssertionDataset: dataform_assertions
+dataformCoreVersion: 3.0.52
