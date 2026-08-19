@@ -5,9 +5,21 @@ config {
 
 }
 
-  -- Use the ref() function to manage dependencies.
-  -- Learn more about ref() and other built in functions here: https://cloud.google.com/dataform/docs/dataform-core
-SELECT
-  *
-FROM
-  ${ref("taxi_trips")}
+SELECT unique_key,
+taxi_id,
+trip_start_timestamp,
+trip_end_timestamp,
+trip_seconds,
+trip_miles,
+pickup_community_area,
+dropoff_community_area,
+fare,
+tips,
+tolls,
+extras,
+trip_total,
+payment_type,
+company
+ FROM ${ref("taxi_trips")}
+where 
+WHERE trip_start_timestamp >= "2023-10-01"
