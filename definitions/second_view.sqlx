@@ -1,5 +1,8 @@
 config {
-    type: "declaration"
+    type: "table",
+    schema: "taxi_trips_agg",
+    name: "stg_taxi_trips"
+
 }
 
   -- Use the ref() function to manage dependencies.
